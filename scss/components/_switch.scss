@@ -38,7 +38,7 @@
 }
 
 input:checked+.slider {
-    background-color: var(--primary-0);
+    background-color: var(--primary);
     &::before {
         -webkit-transform: translateX(20px);
         -ms-transform: translateX(20px);
