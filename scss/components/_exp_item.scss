@@ -1,0 +1,20 @@
+@use '../abstracts' as *;
+
+.exp_img {
+    max-width: 42%;
+    img {
+        width: 250px;
+    }
+}
+
+.chip_container {
+    gap: 0.5rem;
+    .chip {
+        color: var(--text-50);
+        background-color: var(--primary-10);
+        padding: 0.25rem 1rem;
+        font-size: $fs-small;
+        border-radius: 50rem;
+        line-height: 1.25rem;
+    }
+}

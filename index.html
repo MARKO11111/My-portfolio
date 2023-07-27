@@ -3,7 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio basic</title>
+    <title>Marko Bilić</title>
+    <link
+      rel="shortcut icon"
+      href="src/img/my-favicon.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="./css/main.css" />
     <meta name="description" content="My Personal Portfolio" />
     <meta name="author" content="Marko Bilic" />
@@ -11,280 +16,247 @@
   </head>
 
   <body>
-    <main>
-      <div class="bckg_primary_10">
-        <header class="container flex flex_space_between">
+    <div class="spotlight"></div>
+    <main class="flex flex_space_between gap_2">
+      <aside class="pd_6">
+        <div class="flex flex_column flex_space_between full_height">
           <div>
-            <img src="./src/img/Logo.svg" class="img_filter" alt="main logo" />
-          </div>
-          <div class="flex gap_2">
-            <div class="flex gap_1">
-              <img
-                src="./src/img/light_icon.svg"
-                class="img_filter"
-                alt="theme light icon"
-              />
-              <label class="switch">
-                <input type="checkbox" class="dark-mode" />
-                <span class="slider"></span>
-              </label>
-
-              <img
-                src="./src/img/clear_night.svg"
-                class="img_filter"
-                alt="theme dark icon"
-              />
-            </div>
-            <button class="btn">Button</button>
-          </div>
-        </header>
-        <section class="container flex hero">
-          <div class="flex flex_column align_start gap_2 hero_left_content">
-            <h1>Web page main <span class="inter_bold">lead header</span></h1>
-            <p class="lh_base">
-              Matis aliquet faucibus senectus feugiat sapien mi diam nibh velit
-              nunc purus elementum faucibus lectuset mauris.
+            <h1 class="mb_base">Marko Bilić</h1>
+            <h3 class="mb_base">Web Designer and UI Developer</h3>
+            <p>
+              I build accessible, inclusive products and digital experiences for
+              the web.
             </p>
-            <div class="flex gap_2">
-              <button class="btn big">Get in touch</button>
-              <button class="btn big outlined">Our studies</button>
-            </div>
           </div>
-          <div class="profile_container">
-            <img
-              src="./src/img/Profile.png"
-              class="img_responsive"
-              alt="profile image"
-            />
-            <div class="profile_title text_right">
-              <h3 class="inter_bold title">Alisa Black</h3>
-              <p class="subtitle">Head of marketing</p>
+          <nav class="main_nav" aria-label="In-page jump links">
+            <ul class="flex flex_column gap_1">
+              <li>
+                <a href="#about" class="active"
+                  ><span class="nav_indicator transition_all"></span
+                  ><span class="uppercase inter_bold">About</span></a
+                >
+              </li>
+              <li>
+                <a href="#about"
+                  ><span class="nav_indicator transition_all"></span
+                  ><span class="uppercase inter_bold">Experience</span></a
+                >
+              </li>
+              <li>
+                <a href="#about"
+                  ><span class="nav_indicator transition_all"></span
+                  ><span class="uppercase inter_bold">Contact</span></a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="flex gap_2">
+            <a href="" class="link">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.90099 15.5399L13.295 5.14591L13.2808 14.2136C13.2796 14.9383 13.8733 15.532 14.598 15.5308C15.3226 15.5297 15.9089 14.9435 15.91 14.2188L15.9293 1.97364C15.9304 1.24897 15.346 0.664575 14.6214 0.665716L2.37625 0.666402C1.65157 0.667542 1.06534 1.25378 1.0642 1.97845C1.06306 2.70312 1.64745 3.28752 2.37213 3.28638L11.4398 3.29069L1.04578 13.6847C0.533988 14.1965 0.532672 15.0327 1.04286 15.5429C1.55304 16.053 2.3892 16.0517 2.90099 15.5399Z"
+                  fill="white"
+                />
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="" class="link">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.90099 15.5399L13.295 5.14591L13.2808 14.2136C13.2796 14.9383 13.8733 15.532 14.598 15.5308C15.3226 15.5297 15.9089 14.9435 15.91 14.2188L15.9293 1.97364C15.9304 1.24897 15.346 0.664575 14.6214 0.665716L2.37625 0.666402C1.65157 0.667542 1.06534 1.25378 1.0642 1.97845C1.06306 2.70312 1.64745 3.28752 2.37213 3.28638L11.4398 3.29069L1.04578 13.6847C0.533988 14.1965 0.532672 15.0327 1.04286 15.5429C1.55304 16.053 2.3892 16.0517 2.90099 15.5399Z"
+                  fill="white"
+                />
+              </svg>
+              <span>Resume.pdf</span>
+            </a>
+          </div>
+        </div>
+      </aside>
+      <div class="pd_6">
+        <section class="about">
+          <p class="mb_base">
+            Since 2016, I have been passionately involved in the Design
+            industry, contributing to the Design department in both of my
+            previous companies. My primary focus has been on ensuring the
+            overall visual appeal of projects through clean and precious design
+            implementation, while also improving UX/UI, managing maintenance,
+            and organizing project assets.
+          </p>
+          <p class="mb_base">
+            This portfolio showcases a selection of projects that I have had the
+            pleasure to work on, spanning diverse categories such as fintech,
+            business, healthcare, and travel.
+          </p>
+          <p>
+            In my free time, you'll often find me engaged in a variety of
+            interests and hobbies that enrich my life, like cooking, gardening,
+            playing on different instruments and maintaining healthy life style.
+          </p>
+        </section>
+        <section class="experience">
+          <div class="flex flex_column gap_3">
+            <article>
+              <div class="flex gap_1 align_baseline mb_sm">
+                <a href="" class="link">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.90099 15.5399L13.295 5.14591L13.2808 14.2136C13.2796 14.9383 13.8733 15.532 14.598 15.5308C15.3226 15.5297 15.9089 14.9435 15.91 14.2188L15.9293 1.97364C15.9304 1.24897 15.346 0.664575 14.6214 0.665716L2.37625 0.666402C1.65157 0.667542 1.06534 1.25378 1.0642 1.97845C1.06306 2.70312 1.64745 3.28752 2.37213 3.28638L11.4398 3.29069L1.04578 13.6847C0.533988 14.1965 0.532672 15.0327 1.04286 15.5429C1.55304 16.053 2.3892 16.0517 2.90099 15.5399Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <h4>DestiOne</h4>
+                </a>
+                <span class="fs_small color_30">Travel agency app</span>
+              </div>
+              <div class="flex gap_1">
+                <div class="exp_img">
+                  <img
+                    src="src/img/experience/DestiOne.png"
+                    class="br_small"
+                    alt="DestiOne"
+                  />
+                </div>
+                <div class="flex flex_column flex_space_between">
+                  <p class="fs_small lh_small">
+                    Worked on Storybook components library based on atomic
+                    design. Styled and organized components with variants and
+                    states from smallest component to compositions and screens.
+                    Also take care of overall visual look and responsive layout
+                    by testing and improving for different devices
+                  </p>
+                  <div class="flex wrap chip_container">
+                    <span class="chip">HTML</span>
+                    <span class="chip">Storybook</span>
+                    <span class="chip">React</span>
+                    <span class="chip">Styled components</span>
+                    <span class="chip">Design system</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="flex gap_1 align_baseline mb_sm">
+                <a href="" class="link">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.90099 15.5399L13.295 5.14591L13.2808 14.2136C13.2796 14.9383 13.8733 15.532 14.598 15.5308C15.3226 15.5297 15.9089 14.9435 15.91 14.2188L15.9293 1.97364C15.9304 1.24897 15.346 0.664575 14.6214 0.665716L2.37625 0.666402C1.65157 0.667542 1.06534 1.25378 1.0642 1.97845C1.06306 2.70312 1.64745 3.28752 2.37213 3.28638L11.4398 3.29069L1.04578 13.6847C0.533988 14.1965 0.532672 15.0327 1.04286 15.5429C1.55304 16.053 2.3892 16.0517 2.90099 15.5399Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <h4>Apotekamo</h4>
+                </a>
+                <span class="fs_small color_30">E-commerce app</span>
+              </div>
+              <div class="flex gap_1">
+                <div class="exp_img">
+                  <img
+                    src="src/img/experience/Apotekamo.png"
+                    class="br_small"
+                    alt="DestiOne"
+                  />
+                </div>
+                <div class="flex flex_column flex_space_between">
+                  <p class="fs_small lh_small">
+                    Worked on Styling sections, widgets and fixing overall
+                    visual look. Cooperated with PHP developers, designers and
+                    QA. Also helped organizing project design system in Figma.
+                  </p>
+                  <div class="flex wrap chip_container">
+                    <span class="chip">HTML</span>
+                    <span class="chip">CSS</span>
+                    <span class="chip">WordPress</span>
+                    <span class="chip">Figma</span>
+                    <span class="chip">Design system</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="flex gap_1 align_baseline mb_sm">
+                <a href="" class="link">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.90099 15.5399L13.295 5.14591L13.2808 14.2136C13.2796 14.9383 13.8733 15.532 14.598 15.5308C15.3226 15.5297 15.9089 14.9435 15.91 14.2188L15.9293 1.97364C15.9304 1.24897 15.346 0.664575 14.6214 0.665716L2.37625 0.666402C1.65157 0.667542 1.06534 1.25378 1.0642 1.97845C1.06306 2.70312 1.64745 3.28752 2.37213 3.28638L11.4398 3.29069L1.04578 13.6847C0.533988 14.1965 0.532672 15.0327 1.04286 15.5429C1.55304 16.053 2.3892 16.0517 2.90099 15.5399Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <h4>Oodash</h4>
+                </a>
+                <span class="fs_small color_30">Real time business app</span>
+              </div>
+              <div class="flex gap_1">
+                <div class="exp_img">
+                  <img
+                    src="src/img/experience/Oodash.png"
+                    class="br_small"
+                    alt="DestiOne"
+                  />
+                </div>
+                <div class="flex flex_column flex_space_between">
+                  <p class="fs_small lh_small">
+                    Worked closely with front-end developers, designers and QA.
+                    App is developed with Blazor. Improved overall style and
+                    layout. Styled pages, sections and improve app responsive
+                    layout for different devices. Organized design guidelines.
+                  </p>
+                  <div class="flex wrap chip_container">
+                    <span class="chip">HTML</span>
+                    <span class="chip">SCSS</span>
+                    <span class="chip">Blazor</span>
+                    <span class="chip">Responsive</span>
+                    <span class="chip">Design tokens</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <div>
+              <h4 class="mb_sm">Other related info</h4>
+              <p class="fs_small lh_small italic">
+                I had a fantastic experience working at EPTI. Unfortunately, I
+                was affected by a company-wide layoff due to financial
+                difficulties. As a member of the Design team, I collaborated
+                with eight talented designers and contributed to various
+                projects (beside listed ones) including coding several one-page
+                advertising landing pages, creating e-mail HTML templates, and
+                redesigning a mobile app using Figma
+              </p>
             </div>
           </div>
         </section>
       </div>
-      <section class="container skills_section">
-        <h2 class="text_center">Skills</h2>
-        <div class="card_wrapper flex flex_space_between">
-          <article
-            class="flex flex_column align_start gap_2 bckg_primary_10 border_radius_1"
-          >
-            <img src="./src/img/skill_1.svg" class="img_filter" alt="skill 1" />
-            <h4>Skill header</h4>
-            <p class="lh_base">
-              Pellentesque habitant morbi tristique senectus et netus et
-              malesuada fames ac turpis egestas. Mauris tincidunt imperdiet
-              hendrerit. Fusce tortor turpis, facilisis ac efficitur eget,
-            </p>
-          </article>
-          <article
-            class="flex flex_column align_start gap_2 bckg_primary_10 border_radius_1"
-          >
-            <img src="./src/img/skill_2.svg" class="img_filter" alt="skill 2" />
-            <h4>Skill header</h4>
-            <p class="lh_base">
-              Pellentesque habitant morbi tristique senectus et netus et
-              malesuada fames ac turpis egestas. Mauris tincidunt imperdiet
-              hendrerit. Fusce tortor turpis, facilisis ac efficitur eget,
-            </p>
-          </article>
-          <article
-            class="flex flex_column align_start gap_2 bckg_primary_10 border_radius_1"
-          >
-            <img src="./src/img/skill_3.svg" class="img_filter" alt="skill 3" />
-            <h4>Skill header</h4>
-            <p class="lh_base">
-              Pellentesque habitant morbi tristique senectus et netus et
-              malesuada fames ac turpis egestas. Mauris tincidunt imperdiet
-              hendrerit. Fusce tortor turpis, facilisis ac efficitur eget,
-            </p>
-          </article>
-        </div>
-      </section>
-      <section class="toolbox_section container">
-        <div class="section_wrapper flex gap_2 bckg_primary_10 border_radius_1">
-          <div class="toolbox_wrapper reveal">
-            <div class="toolbox">
-              <img src="./src/img/tools/html5.svg" alt="html 5" />
-            </div>
-            <div class="toolbox">
-              <img src="./src/img/tools/css3.svg" alt="css 3" />
-            </div>
-            <div class="toolbox">
-              <img src="./src/img/tools/sass.svg" alt="sass" />
-            </div>
-            <div class="toolbox">
-              <img src="./src/img/tools/ps.svg" alt="photoshop" />
-            </div>
-            <div class="toolbox">
-              <img src="./src/img/tools/ai.svg" alt="illustrator" />
-            </div>
-            <div class="toolbox">
-              <img src="./src/img/tools/Figma.svg" alt="Figma" />
-            </div>
-            <div class="toolbox">
-              <img src="./src/img/tools/Github.svg" alt="Github" />
-            </div>
-            <div class="toolbox">
-              <img src="./src/img/tools/Gitlab.svg" alt="Gitlab" />
-            </div>
-            <div class="toolbox">
-              <img src="./src/img/tools/Storybook.svg" alt="Storybook" />
-            </div>
-          </div>
-          <div class="flex flex_column align_start gap_2 toolbox_header">
-            <h2>Tools</h2>
-            <p class="lh_base">
-              Mattis aliquet faucibus senectus feugiat sapien mi diam nibh velit
-              nunc purus elementum faucibus lectuset mauris.
-            </p>
-            <button class="btn">See all</button>
-          </div>
-        </div>
-      </section>
-      <section class="container benefits_section">
-        <h2 class="text_center">Benefits</h2>
-        <div class="card_wrapper flex flex_space_between">
-          <article class="flex flex_column text_center gap_2">
-            <img
-              src="./src/img/benefit_1.svg"
-              class="img_filter"
-              alt="benefit 1"
-            />
-            <h4>Card header</h4>
-            <p class="lh_base">
-              Sapien ultrices egestas at faucibus eu diam velit diam id amet
-              nibh quam rutrum diam diam natoque scelerisque.
-            </p>
-          </article>
-          <article class="flex flex_column text_center gap_2">
-            <img
-              src="./src/img/benefit_2.svg"
-              class="img_filter"
-              alt="benefit 2"
-            />
-            <h4>Card header</h4>
-            <p class="lh_base">
-              Sapien ultrices egestas at faucibus eu diam velit diam id amet
-              nibh quam rutrum diam diam natoque scelerisque.
-            </p>
-          </article>
-          <article class="flex flex_column text_center gap_2">
-            <img
-              src="./src/img/benefit_3.svg"
-              class="img_filter"
-              alt="benefit 3"
-            />
-            <h4>Card header</h4>
-            <p class="lh_base">
-              Sapien ultrices egestas at faucibus eu diam velit diam id amet
-              nibh quam rutrum diam diam natoque scelerisque.
-            </p>
-          </article>
-        </div>
-      </section>
-      <section class="container contact">
-        <div class="section_wrapper bckg_primary_0 border_radius_1">
-          <h2 class="text_center">Contact me</h2>
-          <form action="">
-            <div class="flex flex_column company align_start">
-              <label for="company" class="input_label">Company</label>
-              <input
-                type="text"
-                id="company"
-                name="company"
-                class="border_radius_1"
-                placeholder="Your company"
-              />
-            </div>
-            <div class="flex flex_column name align_start">
-              <label for="name" class="input_label">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                class="border_radius_1"
-                placeholder="Your name"
-              />
-            </div>
-            <div class="flex flex_column email align_start">
-              <label for="email" class="input_label">Email</label>
-              <input
-                type="text"
-                id="email"
-                name="email"
-                class="border_radius_1"
-                placeholder="Email"
-              />
-            </div>
-            <div class="flex flex_column phone align_start">
-              <label for="phone" class="input_label">Phone</label>
-              <input
-                type="text"
-                id="phone"
-                name="phone"
-                class="border_radius_1"
-                placeholder="Phone number"
-              />
-            </div>
-            <div class="flex flex_column message align_start">
-              <label for="message" class="input_label">Your message</label>
-              <textarea
-                name="message"
-                id="message"
-                class="border_radius_1"
-                placeholder="Enter Your message here..."
-              ></textarea>
-            </div>
-            <div class="flex button align_start justify_center">
-              <button class="btn secondary big">Send</button>
-            </div>
-          </form>
-        </div>
-      </section>
-      <footer>
-        <div class="bckg_primary_10">
-          <div class="container flex flex_space_between top">
-            <div>
-              <a href="#"
-                ><img
-                  src="./src/img/Logo.svg"
-                  class="img_filter"
-                  alt="main logo"
-              /></a>
-            </div>
-            <div class="flex gap_1">
-              <a href="#"
-                ><img
-                  src="./src/img/tweet.svg"
-                  class="img_filter"
-                  alt="tweeter"
-              /></a>
-              <a href="#"
-                ><img
-                  src="./src/img/linkedin.svg"
-                  class="img_filter"
-                  alt="linked in"
-              /></a>
-              <a href="#"
-                ><img
-                  src="./src/img/facebook.svg"
-                  class="img_filter"
-                  alt="facebook"
-              /></a>
-            </div>
-          </div>
-        </div>
-        <div class="bckg_primary_0 text_center bottom">
-          <p>
-            © All rights reserved. Designed and developed by
-            <span> Marko Bilic</span>
-          </p>
-        </div>
-      </footer>
     </main>
 
     <script src="./js/switch.js"></script>
-    <script src="./js/animation.js"></script>
+    <script src="./js/mouse-move.js"></script>
   </body>
 </html>

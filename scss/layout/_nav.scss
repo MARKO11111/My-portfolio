@@ -1,0 +1,24 @@
+@use '../abstracts' as *;
+
+.main_nav {
+    font-size: $fs-xsmall;
+    a {
+        color: var(--text-40);
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        &:hover, &.active {
+            color: var(--text-0);
+            .nav_indicator {
+                width: 5rem;
+                background-color: var(--text-0);
+            }
+        }
+    }
+    .nav_indicator {
+        width: 3.75rem;
+        height: 0.063rem;
+        display: block;
+        background-color: var(--text-40);
+    }
+}

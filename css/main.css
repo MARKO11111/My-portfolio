@@ -1,6 +1,7 @@
 html {
   font-size: 16px;
   font-family: InterRegular, sans-serif, sans-serif;
+  line-height: 1.625rem;
 }
 
 *,
@@ -11,6 +12,10 @@ html {
   padding: 0;
 }
 
+body {
+  background-color: var(--primary);
+}
+
 /**
  * Basic styles for links
  */
@@ -19,8 +24,16 @@ a {
 }
 
 main {
-  background-color: var(--primary);
   color: var(--text-10);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 4rem;
+  width: 100%;
+}
+
+p {
+  line-height: 1.625rem;
+  color: var(--text-20);
 }
 
 @font-face {
@@ -41,6 +54,7 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: clamp(1.5rem, 2.2rem + 1.5vw, 3rem);
+  font-family: InterBold, sans-serif;
 }
 
 h2 {
@@ -49,10 +63,13 @@ h2 {
 
 h3 {
   font-size: 1.25rem;
+  color: var(--text-10);
+  font-family: InterSemibold, sans-serif;
 }
 
 h4 {
   font-size: 1rem;
+  font-family: InterSemibold, sans-serif;
 }
 
 .container {
@@ -69,7 +86,10 @@ h4 {
 
 .flex {
   display: flex;
-  align-items: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
 }
 
 .flex_space_between {
@@ -88,16 +108,28 @@ h4 {
   align-items: flex-start;
 }
 
+.align_baseline {
+  align-items: baseline;
+}
+
 .gap_1 {
   gap: 1rem;
 }
 
 .gap_2 {
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .gap_3 {
-  gap: 3rem;
+  gap: 2.5rem;
+}
+
+.mb_base {
+  margin-bottom: 1.25rem;
+}
+
+.mb_sm {
+  margin-bottom: 1rem;
 }
 
 .bckg_primary_0 {
@@ -116,8 +148,16 @@ h4 {
   text-transform: uppercase;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .lh_base {
   line-height: 1.5rem;
+}
+
+.lh_small {
+  line-height: 1.25rem;
 }
 
 .img_responsive {
@@ -126,11 +166,33 @@ h4 {
 }
 
 .inter_bold {
-  font-family: InterSemibold, sans-serif;
+  font-family: InterBold, sans-serif;
 }
 
-.border_radius_1 {
-  border-radius: 1rem;
+.br_small {
+  border-radius: 0.25rem;
+}
+
+.full_height {
+  height: 100%;
+}
+
+.pd_6 {
+  padding: 6rem 0 6rem 0;
+}
+
+.transition_all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.15s;
+}
+
+.fs_small {
+  font-size: 0.875rem;
+}
+
+.color_30 {
+  color: var(--text-30);
 }
 
 .switch {
@@ -195,6 +257,41 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: #90A4AE;
   border-radius: 6px; /* color of the scroll thumb */
+}
+
+.link {
+  color: var(--text-0);
+  font-family: InterSemibold, sans-serif;
+  display: inline-flex;
+  gap: 0.75rem;
+}
+.link svg {
+  width: 0.75rem;
+}
+.link:hover {
+  color: var(--text-50);
+}
+.link:hover path {
+  fill: var(--text-50);
+}
+
+.exp_img {
+  max-width: 42%;
+}
+.exp_img img {
+  width: 250px;
+}
+
+.chip_container {
+  gap: 0.5rem;
+}
+.chip_container .chip {
+  color: var(--text-50);
+  background-color: var(--primary-10);
+  padding: 0.25rem 1rem;
+  font-size: 0.875rem;
+  border-radius: 50rem;
+  line-height: 1.25rem;
 }
 
 :root.light {
@@ -302,6 +399,36 @@ header.container {
   .hero {
     flex-direction: column;
   }
+}
+
+aside {
+  min-width: 40%;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+.main_nav {
+  font-size: 0.75rem;
+}
+.main_nav a {
+  color: var(--text-40);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.main_nav a:hover, .main_nav a.active {
+  color: var(--text-0);
+}
+.main_nav a:hover .nav_indicator, .main_nav a.active .nav_indicator {
+  width: 5rem;
+  background-color: var(--text-0);
+}
+.main_nav .nav_indicator {
+  width: 3.75rem;
+  height: 0.063rem;
+  display: block;
+  background-color: var(--text-40);
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -414,6 +541,10 @@ small {
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
+ul {
+  list-style: none;
+}
+
 sub,
 sup {
   font-size: 75%;

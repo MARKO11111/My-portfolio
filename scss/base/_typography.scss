@@ -6,6 +6,7 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: clamp($fs-h2, 2.2rem + 1.5vw, $fs-h1);
+  font-family: $font-inter-bold;
 }
 
 h2 {
@@ -14,8 +15,11 @@ h2 {
 
 h3 {
   font-size: $fs-h3;
+  color: var(--text-10);
+  font-family: $font-inter-semibold;
 }
 
 h4 {
   font-size: $fs-h4;
+  font-family: $font-inter-semibold;
 }
