@@ -41,3 +41,8 @@ p {
   line-height: 1.625rem;
   color: var(--text-20);
 }
+
+pre {
+  font-family: $font-inter-regular!important;
+  display: inline-block;
+}

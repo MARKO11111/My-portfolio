@@ -13,5 +13,17 @@
         path {
             fill: var(--text-50);
         }
+        h2, h4 {
+            color: var(--text-50);
+        }
+    }
+    &.big {
+        align-items: center;
+        svg {
+            width: 1rem;
+        }
+        h2 {
+            line-height: 13px;
+        }
     }
 }

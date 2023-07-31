@@ -59,8 +59,16 @@
  margin-bottom: 1.25rem;
 }
 
+.mt_big {
+  margin-top: 5rem;
+ }
+
 .mb_sm {
   margin-bottom: 1rem;
+ }
+
+ .mb_big {
+  margin-bottom: 4rem;
  }
 
 .bckg_primary_0 {
@@ -101,6 +109,10 @@
   font-family: $font-inter-bold;
 }
 
+.inter_regular {
+  font-family: $font-inter-regular;
+}
+
 .br_small {
   border-radius: 0.25rem;
 }
@@ -125,4 +137,8 @@
 
 .color_30 {
   color: var(--text-30);
+}
+
+.color_20 {
+  color: var(--text-20);
 }

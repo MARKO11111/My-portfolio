@@ -36,6 +36,11 @@ p {
   color: var(--text-20);
 }
 
+pre {
+  font-family: InterRegular, sans-serif !important;
+  display: inline-block;
+}
+
 @font-face {
   font-family: InterRegular;
   src: url(../src/fonts/Inter-Regular.ttf);
@@ -48,28 +53,29 @@ p {
   font-family: InterBold;
   src: url(../src/fonts/Inter-Bold.ttf);
 }
-h1, h2, h3, h4 {
-  color: var(--text-0);
-}
-
 h1 {
   font-size: clamp(1.5rem, 2.2rem + 1.5vw, 3rem);
   font-family: InterBold, sans-serif;
+  color: var(--text-0);
+}
+
+h2, h3, h4 {
+  font-family: InterSemibold, sans-serif;
 }
 
 h2 {
   font-size: clamp(1.25rem, 1.9rem + 0.5vw, 1.5rem);
+  color: var(--text-0);
 }
 
 h3 {
   font-size: 1.25rem;
   color: var(--text-10);
-  font-family: InterSemibold, sans-serif;
 }
 
 h4 {
   font-size: 1rem;
-  font-family: InterSemibold, sans-serif;
+  color: var(--text-0);
 }
 
 .container {
@@ -128,8 +134,16 @@ h4 {
   margin-bottom: 1.25rem;
 }
 
+.mt_big {
+  margin-top: 5rem;
+}
+
 .mb_sm {
   margin-bottom: 1rem;
+}
+
+.mb_big {
+  margin-bottom: 4rem;
 }
 
 .bckg_primary_0 {
@@ -169,6 +183,10 @@ h4 {
   font-family: InterBold, sans-serif;
 }
 
+.inter_regular {
+  font-family: InterRegular, sans-serif;
+}
+
 .br_small {
   border-radius: 0.25rem;
 }
@@ -193,6 +211,10 @@ h4 {
 
 .color_30 {
   color: var(--text-30);
+}
+
+.color_20 {
+  color: var(--text-20);
 }
 
 .switch {
@@ -274,9 +296,21 @@ body::-webkit-scrollbar-thumb {
 .link:hover path {
   fill: var(--text-50);
 }
+.link:hover h2, .link:hover h4 {
+  color: var(--text-50);
+}
+.link.big {
+  align-items: center;
+}
+.link.big svg {
+  width: 1rem;
+}
+.link.big h2 {
+  line-height: 13px;
+}
 
 .exp_img {
-  max-width: 42%;
+  max-width: 41%;
 }
 .exp_img img {
   width: 250px;
@@ -314,39 +348,6 @@ body::-webkit-scrollbar-thumb {
   --text-30: hsl(0, 0%, 100%);
   --text-40: hsl(215, 18%, 44%);
   --text-50: hsl(171, 77%, 64%);
-}
-
-footer {
-  color: var(--text-20);
-  margin-top: 6.25rem;
-}
-@media only screen and (max-width: 75em) {
-  footer {
-    margin-top: 3rem;
-  }
-}
-footer .bottom {
-  padding: 1.25rem 0;
-  font-size: 0.875rem;
-}
-@media only screen and (max-width: 40em) {
-  footer .bottom {
-    padding: 1.75rem 1.5rem;
-  }
-}
-footer .bottom span {
-  color: var(--text-30);
-}
-footer .top {
-  padding: 1.75rem 0;
-}
-@media only screen and (max-width: 75em) {
-  footer .top {
-    padding: 1.75rem 1.5rem;
-  }
-}
-footer a {
-  display: flex;
 }
 
 header.container {
@@ -429,6 +430,14 @@ aside {
   height: 0.063rem;
   display: block;
   background-color: var(--text-40);
+}
+
+.experience {
+  margin-top: 10rem;
+}
+.experience .title h3 {
+  font-weight: normal;
+  width: 41%;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
