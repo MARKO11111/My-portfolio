@@ -28,22 +28,22 @@
               the web.
             </p>
           </div>
-          <nav class="main_nav" aria-label="In-page jump links">
+          <nav class="main_nav">
             <ul class="flex flex_column gap_1">
-              <li>
-                <a href="#about" class="active"
+              <li class="nav-item">
+                <a href="#about" class="nav_link active"
                   ><span class="nav_indicator transition_all"></span
                   ><span class="uppercase inter_bold">About</span></a
                 >
               </li>
               <li>
-                <a href="#about"
+                <a href="#experience" class="nav_link"
                   ><span class="nav_indicator transition_all"></span
                   ><span class="uppercase inter_bold">Experience</span></a
                 >
               </li>
               <li>
-                <a href="#about"
+                <a href="#contact" class="nav_link"
                   ><span class="nav_indicator transition_all"></span
                   ><span class="uppercase inter_bold">Contact</span></a
                 >
@@ -93,7 +93,7 @@
         </div>
       </aside>
       <div class="pd_6">
-        <section class="about">
+        <section id="about" class="scroll_top">
           <p class="mb_base">
             Since 2016, I have been passionately involved in the Design
             industry, contributing to the Design department in both of my
@@ -113,9 +113,9 @@
             playing on different instruments and maintaining healthy life style.
           </p>
         </section>
-        <section class="experience">
+        <section id="experience" class="mt_big scroll_top">
           <div class="flex flex_column gap_3">
-            <div class="title flex gap_1">
+            <div class="grid_columns gap_1">
               <h3 class="uppercase fs_small inter_regular color_30">
                 January 2022 - April 2023
               </h3>
@@ -158,8 +158,8 @@
                 </a>
                 <span class="fs_small color_30">Travel agency app</span>
               </div>
-              <div class="flex gap_1">
-                <div class="exp_img">
+              <div class="grid_columns gap_1">
+                <div>
                   <img
                     src="src/img/experience/DestiOne.png"
                     class="br_small"
@@ -203,8 +203,8 @@
                 </a>
                 <span class="fs_small color_30">E-commerce app</span>
               </div>
-              <div class="flex gap_1">
-                <div class="exp_img">
+              <div class="grid_columns gap_1">
+                <div>
                   <img
                     src="src/img/experience/Apotekamo.png"
                     class="br_small"
@@ -246,8 +246,8 @@
                 </a>
                 <span class="fs_small color_30">Real time business app</span>
               </div>
-              <div class="flex gap_1">
-                <div class="exp_img">
+              <div class="grid_columns gap_1">
+                <div>
                   <img
                     src="src/img/experience/Oodash.png"
                     class="br_small"
@@ -284,8 +284,8 @@
               </p>
             </div>
           </div>
-          <div class="flex flex_column gap_3 mt_big">
-            <div class="title flex gap_1">
+          <div class="flex flex_column gap_3 mt_base">
+            <div class="grid_columns gap_1">
               <h3 class="uppercase fs_small inter_regular color_30">
                 April 2016 - January 2022
               </h3>
@@ -332,8 +332,8 @@
                 </a>
                 <span class="fs_small color_30">Fintech main app</span>
               </div>
-              <div class="flex gap_1">
-                <div class="exp_img">
+              <div class="grid_columns gap_1">
+                <div>
                   <img
                     src="src/img/experience/BaghaWelth.png"
                     class="br_small"
@@ -381,8 +381,8 @@
                 </a>
                 <span class="fs_small color_30">Advertising website</span>
               </div>
-              <div class="flex gap_1">
-                <div class="exp_img">
+              <div class="grid_columns gap_1">
+                <div>
                   <img
                     src="src/img/experience/Superfund.png"
                     class="br_small"
@@ -427,8 +427,8 @@
                 </a>
                 <span class="fs_small color_30">BahaWelth old</span>
               </div>
-              <div class="flex gap_1">
-                <div class="exp_img">
+              <div class="grid_columns gap_1">
+                <div>
                   <img
                     src="src/img/experience/BahaOld.png"
                     class="br_small"
@@ -464,8 +464,8 @@
             </div>
           </div>
         </section>
-        <section class="contact">
-          <h2 class="uppercase mt_big mb_base">Contact</h2>
+        <section id="contact" class="mt_big">
+          <h2 class="uppercase mb_base">Contact</h2>
           <p class="mb_big">
             Thank you for visiting my portfolio! If you have any questions,
             require access credentials for projects listed above, or to discuss
@@ -482,15 +482,16 @@
             </pre>
           </div>
         </section>
-        <footer class="mt_big">
+        <footer class="mt_base">
           <p class="text_center">
             Designed in Figma, and coded in VS Code by Marko Bilić.
           </p>
         </footer>
       </div>
     </main>
-
-    <script src="./js/switch.js"></script>
-    <script src="./js/mouse-move.js"></script>
+    <!-- Bootstrap core JS
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> -->
+    <!-- <script src="./js/switch.js"></script> -->
+    <script src="./js/content-scroll.js"></script>
   </body>
 </html>

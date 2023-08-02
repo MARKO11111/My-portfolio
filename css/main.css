@@ -2,6 +2,7 @@ html {
   font-size: 16px;
   font-family: InterRegular, sans-serif, sans-serif;
   line-height: 1.625rem;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -61,6 +62,7 @@ h1 {
 
 h2, h3, h4 {
   font-family: InterSemibold, sans-serif;
+  font-weight: normal;
 }
 
 h2 {
@@ -130,20 +132,24 @@ h4 {
   gap: 2.5rem;
 }
 
-.mb_base {
-  margin-bottom: 1.25rem;
-}
-
-.mt_big {
-  margin-top: 5rem;
-}
-
 .mb_sm {
   margin-bottom: 1rem;
 }
 
+.mb_base {
+  margin-bottom: 1.25rem;
+}
+
 .mb_big {
   margin-bottom: 4rem;
+}
+
+.mt_base {
+  margin-top: 5rem;
+}
+
+.mt_big {
+  margin-top: 9rem;
 }
 
 .bckg_primary_0 {
@@ -177,6 +183,11 @@ h4 {
 .img_responsive {
   width: 100%;
   height: auto;
+}
+
+.grid_columns {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
 }
 
 .inter_bold {
@@ -215,6 +226,10 @@ h4 {
 
 .color_20 {
   color: var(--text-20);
+}
+
+.scroll_top {
+  scroll-margin-top: 6.5rem;
 }
 
 .switch {
@@ -307,13 +322,6 @@ body::-webkit-scrollbar-thumb {
 }
 .link.big h2 {
   line-height: 13px;
-}
-
-.exp_img {
-  max-width: 41%;
-}
-.exp_img img {
-  width: 250px;
 }
 
 .chip_container {
@@ -430,14 +438,6 @@ aside {
   height: 0.063rem;
   display: block;
   background-color: var(--text-40);
-}
-
-.experience {
-  margin-top: 10rem;
-}
-.experience .title h3 {
-  font-weight: normal;
-  width: 41%;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

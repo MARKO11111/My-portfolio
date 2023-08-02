@@ -55,20 +55,25 @@
   gap: 2.5rem;
 }
 
-.mb_base {
- margin-bottom: 1.25rem;
-}
-
-.mt_big {
-  margin-top: 5rem;
- }
-
 .mb_sm {
   margin-bottom: 1rem;
  }
 
- .mb_big {
+
+.mb_base {
+ margin-bottom: 1.25rem;
+}
+
+.mb_big {
   margin-bottom: 4rem;
+ }
+
+.mt_base {
+  margin-top: 5rem;
+ }
+
+ .mt_big {
+  margin-top: 9rem;
  }
 
 .bckg_primary_0 {
@@ -104,6 +109,10 @@
   height: auto;
 }
 
+.grid_columns {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+}
 
 .inter_bold {
   font-family: $font-inter-bold;
@@ -141,4 +150,8 @@
 
 .color_20 {
   color: var(--text-20);
+}
+
+.scroll_top {
+  scroll-margin-top: 6.5rem;
 }
