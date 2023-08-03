@@ -2,6 +2,7 @@
 
 .chip_container {
     gap: 0.5rem;
+    margin-top: 1rem;
     .chip {
         color: var(--text-50);
         background-color: var(--primary-10);
@@ -9,6 +10,9 @@
         font-size: $fs-small;
         border-radius: 50rem;
         line-height: 1.25rem;
+    }
+    @include mq(medium) {
+        margin-top: 0;
     }
 }
 

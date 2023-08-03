@@ -15,5 +15,3 @@ window.addEventListener('scroll', () => {
         }
     });
 });
-
-console.log(sections);

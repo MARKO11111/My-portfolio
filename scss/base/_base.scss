@@ -33,8 +33,11 @@ main {
   color: var(--text-10);
   max-width: $max-width;
   margin: 0 auto;
-  padding: 0 4rem;
+  padding: 2rem;
   width: 100%;
+  @include mq(large) {
+    padding: 0 4rem;
+  }
 }
 
 
@@ -46,4 +49,12 @@ p {
 pre {
   font-family: $font-inter-regular!important;
   display: inline-block;
+}
+
+.cursor {
+  z-index: 999;
+  position: fixed;
+  background-color: red;
+  width: 20px;
+  height: 20px;
 }

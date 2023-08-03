@@ -1,6 +1,18 @@
+@use '../abstracts' as *;
+
 aside {
     min-width: 40%;
-    height: 100vh;
-    position: sticky;
-    top: 0;
+    height: auto;
+    position: relative;
+    @include mq(large) {
+        position: sticky;
+        height: 100vh;
+        top: 0;
+    }
+    .social {
+        margin-top: 2rem;
+        @include mq(large) {
+            margin-top: 0;
+        }
+    }
 }

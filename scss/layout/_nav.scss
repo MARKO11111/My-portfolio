@@ -2,6 +2,7 @@
 
 .main_nav {
     font-size: $fs-xsmall;
+    display: none;
     a {
         color: var(--text-40);
         display: flex;
@@ -20,5 +21,8 @@
         height: 0.063rem;
         display: block;
         background-color: var(--text-40);
+    }
+    @include mq(large) {
+        display: block;
     }
 }

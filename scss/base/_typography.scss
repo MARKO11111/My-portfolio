@@ -13,9 +13,8 @@ h2, h3, h4 {
 }
 
 h2 {
-  font-size: clamp($fs-h3, 1.9rem + 0.5vw, $fs-h2);
+  font-size: clamp($fs-h3, 1rem + 0.5vw, $fs-h2);
   color: var(--text-0);
- 
 }
 
 h3 {
