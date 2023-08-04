@@ -47,14 +47,6 @@ pre {
   display: inline-block;
 }
 
-.cursor {
-  z-index: 999;
-  position: fixed;
-  background-color: red;
-  width: 20px;
-  height: 20px;
-}
-
 @font-face {
   font-family: InterRegular;
   src: url(../src/fonts/Inter-Regular.ttf);
