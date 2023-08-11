@@ -4,14 +4,12 @@
 // 2. Components
 @use 'components/components-index';
 
-// 3. Themes
-@use 'themes/default';
-
-// 4. Sections layout 
+// 3. Sections layout 
 @use 'layout/layout-index';
 
-// 5. Vendors, external stuff, in this case reset
+// 4. Vendors, external stuff
 @use 'vendors/normalize';
-@use 'vendors/mouse';
+
+
 
 

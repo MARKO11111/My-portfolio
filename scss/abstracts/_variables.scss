@@ -2,8 +2,6 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
-/// container max-width
-
 $max-width: 1200px;
 
 /// font family
@@ -24,39 +22,18 @@ $fs-xsmall: 0.75rem;
 
  
 /// colors
+:root {
+  --primary: hsl(222, 47%, 11%);
+  --primary-10: hsla(172, 66%, 50%, 0.1);
+  --text-0: hsl(0, 0%, 100%);
+  --text-10: hsl(214, 32%, 91%);
+  --text-20: hsl(225, 31%, 74%);
+  --text-30: hsl(215, 20%, 65%);
+  --text-40: hsl(215, 18%, 44%);
+  --text-50: hsl(171, 77%, 64%);
+}
 
-$--primary: --primary;
-$--primary-10: --primary-10;
-$--text-0: --text-0;
-$--text-10: --text-10;
-$--text-20: --text-20;
-$--text-30: --text-30;
-$--text-40: --text-40;
-$--text-50: --text-50;
 
-// Default theme
-$theme-map-light: (
-  $--primary: hsl(222, 47%, 11%),
-  $--primary-10: hsla(172, 66%, 50%, 0.1),
-  $--text-0: hsl(0, 0%, 100%),
-  $--text-10: hsl(214, 32%, 91%),
-  $--text-20: hsl(225, 31%, 74%),
-  $--text-30: hsl(215, 20%, 65%),
-  $--text-40: hsl(215, 18%, 44%),
-  $--text-50: hsl(171, 77%, 64%),
-);
-
-// Override the default light theme
-$theme-map-dark: (
-  --primary: hsl(160, 87%, 24%),
-  --primary-10: hsla(172, 66%, 50%, 0.1),
-  --text-0: hsl(0, 0%, 100%),
-  --text-10: hsl(0, 0%, 81%),
-  --text-20: hsl(0, 0%, 86%),
-  --text-30: hsl(0, 0%, 100%),
-  --text-40: hsl(215, 18%, 44%),
-  --text-50: hsl(171, 77%, 64%),
-);
 
 // Scrollbar
 

@@ -1,3 +1,14 @@
+:root {
+  --primary: hsl(222, 47%, 11%);
+  --primary-10: hsla(172, 66%, 50%, 0.1);
+  --text-0: hsl(0, 0%, 100%);
+  --text-10: hsl(214, 32%, 91%);
+  --text-20: hsl(225, 31%, 74%);
+  --text-30: hsl(215, 20%, 65%);
+  --text-40: hsl(215, 18%, 44%);
+  --text-50: hsl(171, 77%, 64%);
+}
+
 html {
   font-size: 16px;
   font-family: InterRegular, sans-serif, sans-serif;
@@ -273,57 +284,6 @@ h4 {
   }
 }
 
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 52px;
-  height: 32px;
-}
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-.slider::before {
-  position: absolute;
-  content: "";
-  height: 24px;
-  width: 24px;
-  left: 4px;
-  bottom: 4px;
-  background-color: hsl(0, 0%, 100%);
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-input:checked + .slider {
-  background-color: var(--primary);
-}
-input:checked + .slider::before {
-  -webkit-transform: translateX(20px);
-  -ms-transform: translateX(20px);
-  transform: translateX(20px);
-}
-
-.slider {
-  border-radius: 100px;
-}
-.slider::before {
-  border-radius: 50%;
-}
-
 body::-webkit-scrollbar {
   width: 10px; /* width of the entire scrollbar */
 }
@@ -380,80 +340,6 @@ body::-webkit-scrollbar-thumb {
 @media only screen and (min-width: 45em) {
   .chip_container {
     margin-top: 0;
-  }
-}
-
-:root.light {
-  --primary: hsl(222, 47%, 11%);
-  --primary-10: hsla(172, 66%, 50%, 0.1);
-  --text-0: hsl(0, 0%, 100%);
-  --text-10: hsl(214, 32%, 91%);
-  --text-20: hsl(225, 31%, 74%);
-  --text-30: hsl(215, 20%, 65%);
-  --text-40: hsl(215, 18%, 44%);
-  --text-50: hsl(171, 77%, 64%);
-}
-
-:root.dark {
-  --primary: hsl(160, 87%, 24%);
-  --primary-10: hsla(172, 66%, 50%, 0.1);
-  --text-0: hsl(0, 0%, 100%);
-  --text-10: hsl(0, 0%, 81%);
-  --text-20: hsl(0, 0%, 86%);
-  --text-30: hsl(0, 0%, 100%);
-  --text-40: hsl(215, 18%, 44%);
-  --text-50: hsl(171, 77%, 64%);
-}
-
-header.container {
-  padding: 1rem 0;
-}
-@media only screen and (min-width: 65em) {
-  header.container {
-    padding: 1rem 1.5rem;
-  }
-}
-
-.profile_container {
-  border-radius: 50% 50% 0 50%;
-  overflow: hidden;
-  position: relative;
-  width: max(40%, 350px);
-}
-.profile_container .profile_title {
-  position: absolute;
-  bottom: 2rem;
-  right: 2rem;
-}
-
-.profile_title .title {
-  color: var(--text-30);
-}
-.profile_title .subtitle {
-  font-size: 1.5rem;
-  color: var(--text-20);
-  font-family: InterRegular, sans-serif;
-}
-
-.hero_left_content {
-  width: 60%;
-  padding-right: 14rem;
-}
-@media only screen and (min-width: 65em) {
-  .hero_left_content {
-    padding-right: 0;
-  }
-}
-@media only screen and (min-width: 45em) {
-  .hero_left_content {
-    width: 100%;
-    order: 2;
-  }
-}
-
-@media only screen and (min-width: 45em) {
-  .hero {
-    flex-direction: column;
   }
 }
 
