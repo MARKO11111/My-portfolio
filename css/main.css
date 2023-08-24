@@ -284,6 +284,10 @@ h4 {
   }
 }
 
+.highlight {
+  color: var(--text-10);
+}
+
 body::-webkit-scrollbar {
   width: 10px; /* width of the entire scrollbar */
 }
