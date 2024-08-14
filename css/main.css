@@ -216,7 +216,7 @@ h4 {
 }
 
 .lh_small {
-  line-height: 1.25rem;
+  line-height: 1.3rem;
 }
 
 .img_responsive {
@@ -471,7 +471,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
